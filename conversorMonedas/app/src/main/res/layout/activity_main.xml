@@ -28,7 +28,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:text="0"
+        android:text="1"
         app:layout_constraintEnd_toStartOf="@+id/btResta"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btSuma"
@@ -63,7 +63,7 @@
     <!-- **************************************************************************** -->
 
     <TextView
-        android:id="@+id/conversor2"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -72,13 +72,13 @@
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/iptDolar"
+        app:layout_constraintEnd_toStartOf="@+id/resDolar"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iptConverter" />
+        app:layout_constraintTop_toBottomOf="@+id/btConvertir" />
 
     <TextView
-        android:id="@+id/conversor3"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -89,26 +89,13 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/iptDolar"
-        app:layout_constraintTop_toBottomOf="@+id/iptConverter" />
-
-    <EditText
-        android:id="@+id/iptDolar"
-        android:layout_width="146dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="100dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:text="0.86"
-        app:layout_constraintEnd_toStartOf="@+id/conversor3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/conversor2"
-        app:layout_constraintTop_toBottomOf="@+id/iptConverter" />
+        app:layout_constraintStart_toEndOf="@+id/resDolar"
+        app:layout_constraintTop_toBottomOf="@+id/btConvertir" />
 
     <!-- **************************************************************************** -->
 
     <TextView
-        android:id="@+id/conversor2"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -119,35 +106,63 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/iptEuro"
-        app:layout_constraintTop_toBottomOf="@+id/iptDolar" />
+        app:layout_constraintStart_toEndOf="@+id/resEuro"
+        app:layout_constraintTop_toBottomOf="@+id/resDolar" />
 
     <TextView
-        android:id="@+id/conversor3"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="100dp"
         android:padding="10dp"
         android:text="Euro"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/iptEuro"
+        app:layout_constraintEnd_toStartOf="@+id/resEuro"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iptDolar" />
+        app:layout_constraintTop_toBottomOf="@+id/resDolar" />
 
-    <EditText
-        android:id="@+id/iptEuro"
-        android:layout_width="146dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="100dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:text="1.17"
-        app:layout_constraintEnd_toStartOf="@+id/conversor2"
+    <Button
+        android:id="@+id/btConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="convertir"
+        android:text="Convertir"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/conversor3"
-        app:layout_constraintTop_toBottomOf="@+id/iptDolar" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iptConverter" />
+
+    <!-- Resultados -->
+
+    <TextView
+        android:id="@+id/resDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="0.86"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/btConvertir" />
+
+    <TextView
+        android:id="@+id/resEuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="1.17"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/resDolar" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

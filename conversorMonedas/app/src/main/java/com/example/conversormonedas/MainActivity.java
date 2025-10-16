@@ -14,29 +14,42 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText mainInput, dolar, euro;
+    EditText mainInput;
+    TextView resDolar, resEuro;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        mainInput = (EditText) findViewById(R.id.iptConverter); // Caja de arriba
-        dolar = (EditText) findViewById(R.id.iptDolar);
-        euro = (EditText) findViewById(R.id.iptEuro);
+        mainInput = findViewById(R.id.iptConverter);
+
+        resDolar = findViewById(R.id.resDolar);     // resultado (output)
+        resEuro = findViewById(R.id.resEuro);       // resultado (output)
 
         }
     public void incrementar(View vista){
         Double n = Double.valueOf(mainInput.getText().toString())+1;
         mainInput.setText(String.valueOf(n));
+
     }
     public void decrementar(View vista){
         Double n = Double.valueOf(mainInput.getText().toString())-1;
         mainInput.setText(String.valueOf(n));
+
     }
 
-    public void general(EditText t, int a){
-        Double n = Double.valueOf(dolar.getText().toString()) * a;
+    public void convertir(View v) {
+        String sBase = mainInput.getText().toString();
+        if (sBase.isEmpty()) return; // o mostrar error
 
+        double cantidadBase = Double.parseDouble(sBase);
+
+        double valorDolar = cantidadBase * 0.86;
+        double valorEuro  = cantidadBase * 1.17;
+
+        // Mostramos los resultados en las vistas de resultado
+        resDolar.setText(String.format("%.2f", valorDolar));
+        resEuro.setText(String.format("%.2f", valorEuro));
     }
 }
