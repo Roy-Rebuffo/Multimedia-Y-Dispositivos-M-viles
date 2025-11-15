@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+<!--************************Imagenes de banderas******************************-->
+
+    <ImageView
+        android:id="@+id/usa"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/usa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cee"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/cee"
+        app:layout_constraintStart_toEndOf="@+id/usa"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/yen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/japon"
+        app:layout_constraintStart_toEndOf="@+id/cee"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/libra"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/ingla"
+        app:layout_constraintStart_toEndOf="@+id/yen"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--************************Fin de Imagenes de banderas*******************-->
+
+    <!--************************TextView**************************************-->
+    <TextView
+        android:id="@+id/dolarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="15dp"
+        android:text="Dólar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usa" />
+
+    <TextView
+        android:id="@+id/dolarText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="362dp"
+        android:text="Dólar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ceeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Euro"
+        app:layout_constraintStart_toEndOf="@+id/dolarText"
+        app:layout_constraintTop_toBottomOf="@+id/cee" />
+
+    <TextView
+        android:id="@+id/ceeText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="362dp"
+        android:text="Euro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dolarText2" />
+
+    <TextView
+        android:id="@+id/libraText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="15dp"
+        android:text="Libra"
+        app:layout_constraintStart_toEndOf="@+id/yenText"
+        app:layout_constraintTop_toBottomOf="@+id/libra" />
+
+    <TextView
+        android:id="@+id/libraText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="362dp"
+        android:text="Libra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yenText2" />
+
+    <TextView
+        android:id="@+id/yenText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="15dp"
+        android:text="Yen"
+        app:layout_constraintStart_toEndOf="@+id/ceeText"
+        app:layout_constraintTop_toBottomOf="@+id/yen" />
+
+    <TextView
+        android:id="@+id/yenText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="362dp"
+        android:text="Yen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ceeText2" />
+    <!--************************Fin deTextView********************************-->
+
+    <!--************************Edit Texts************************************-->
+
+    <!--************DOLAR*********************-->
+    <EditText
+        android:id="@+id/dolarDolarET"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/fondo_input_disabled"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:enabled="false"
+        android:focusable="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/dolarEuroET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dolarText2"
+        app:layout_constraintTop_toBottomOf="@+id/dolarText" />
+
+    <EditText
+        android:id="@+id/dolarEuroET"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/fondo_input"
+        android:text="0.719"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/dolarYenET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dolarDolarET"
+        app:layout_constraintTop_toBottomOf="@+id/ceeText" />
+
+    <EditText
+        android:id="@+id/dolarYenET"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/fondo_input"
+        android:text="101.615"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/dolarLibraET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dolarEuroET"
+        app:layout_constraintTop_toBottomOf="@+id/yenText" />
+
+    <EditText
+        android:id="@+id/dolarLibraET"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/fondo_input"
+        android:text="0.596"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dolarYenET"
+        app:layout_constraintTop_toBottomOf="@+id/libraText" />
+    <!--************EURO*********************-->
+
+    <EditText
+        android:id="@+id/euroDolarET"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondo_input"
+        android:text="1.390821"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/euroEuroET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ceeText2"
+        app:layout_constraintTop_toBottomOf="@+id/dolarDolarET" />
+
+    <EditText
+        android:id="@+id/euroEuroET"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondo_input_disabled"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:enabled="false"
+        android:focusable="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/euroYenET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/euroDolarET"
+        app:layout_constraintTop_toBottomOf="@+id/dolarEuroET" />
+
+    <EditText
+        android:id="@+id/euroYenET"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondo_input"
+        android:text="141.328234"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toStartOf="@+id/euroLibraET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/euroEuroET"
+        app:layout_constraintTop_toBottomOf="@+id/dolarYenET" />
+
+    <EditText
+        android:id="@+id/euroLibraET"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondo_input"
+        android:text="0.828929"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/euroYenET"
+        app:layout_constraintTop_toBottomOf="@+id/dolarLibraET"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--************YEN*********************-->
+    <EditText
+        android:id="@+id/yenDolarET"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondo_input"
+        android:text="0.009841"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/yenEuroET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yenText2"
+        app:layout_constraintTop_toBottomOf="@+id/euroDolarET" />
+
+    <EditText
+        android:id="@+id/yenEuroET"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondo_input"
+        android:text="0.007076"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/yenYenET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yenDolarET"
+        app:layout_constraintTop_toBottomOf="@+id/euroEuroET" />
+
+    <EditText
+        android:id="@+id/yenYenET"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondo_input_disabled"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:enabled="false"
+        android:focusable="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/yenLibraET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yenEuroET"
+        app:layout_constraintTop_toBottomOf="@+id/euroYenET" />
+
+    <EditText
+        android:id="@+id/yenLibraET"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondo_input"
+        android:text="0.005865"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yenYenET"
+        app:layout_constraintTop_toBottomOf="@+id/euroLibraET" />
+
+    <!--************LIBRA*********************-->
+
+    <EditText
+        android:id="@+id/libraDolarET"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondo_input"
+        android:text="1.677852"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/libraEuroET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/libraText2"
+        app:layout_constraintTop_toBottomOf="@+id/yenDolarET" />
+
+    <EditText
+        android:id="@+id/libraEuroET"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondo_input"
+        android:text="1.206376"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/libraYenET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/libraDolarET"
+        app:layout_constraintTop_toBottomOf="@+id/yenEuroET" />
+
+    <EditText
+        android:id="@+id/libraYenET"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondo_input"
+        android:text="170.494966"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toStartOf="@+id/libraLibraET"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/libraEuroET"
+        app:layout_constraintTop_toBottomOf="@+id/yenYenET" />
+
+    <EditText
+        android:id="@+id/libraLibraET"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondo_input_disabled"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:enabled="false"
+        android:focusable="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/libraYenET"
+        app:layout_constraintTop_toBottomOf="@+id/yenLibraET" />
+    <!--************************Fin de Edit Texts*****************************-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
