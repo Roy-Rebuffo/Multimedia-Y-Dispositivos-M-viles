@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:background="@color/material_dynamic_neutral_variant70"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <EditText
+            android:id="@+id/centigrados"
+            android:layout_width="112dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text=".0"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btgcmenos"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btgcmas"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.598" />
+
+        <Button
+            android:id="@+id/btgcmas"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:onClick="decrementarCentigrados"
+            android:text="-1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/centigrados"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.598" />
+
+        <Button
+            android:id="@+id/btgcmenos"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:onClick="aumentarCentigrados"
+            android:text="+1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/centigrados"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.598" />
+
+        <TextView
+            android:id="@+id/tgc"
+            style="@style/Widget.Material3.SearchView.Prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/textview_border"
+            android:padding="10dp"
+            android:text="Grados Centigrados"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:background="@color/material_dynamic_neutral_variant70"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="0.5">
+
+        <EditText
+            android:id="@+id/Fahrenheit"
+            android:layout_width="112dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="32.0"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btgfmenos"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btgfmas"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.598" />
+
+        <Button
+            android:id="@+id/btgfmas"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:onClick="decrementarFahrenheit"
+            android:text="-1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Fahrenheit"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.598" />
+
+        <Button
+            android:id="@+id/btgfmenos"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:onClick="aumentarFahrenheit"
+            android:text="+1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/Fahrenheit"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.598" />
+
+        <TextView
+            android:id="@+id/tgf"
+            style="@style/Widget.Material3.SearchView.Prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textAlignment="textEnd"
+            android:background="@drawable/textview_border"
+            android:padding="10dp"
+            android:text="Grados Fahrenheit"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="64dp"
+        android:background="@color/material_dynamic_neutral_variant70"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        app:layout_constraintVertical_bias="0.5">
+
+        <EditText
+            android:id="@+id/kelvin"
+            android:layout_width="112dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="273.15"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btgkmenos"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btgkmas"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.598" />
+
+        <Button
+            android:id="@+id/btgkmas"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:onClick="decrementarKelvin"
+            android:text="-1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/kelvin"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.598" />
+
+        <Button
+            android:id="@+id/btgkmenos"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:onClick="aumentarKelvin"
+            android:text="+1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/kelvin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.598" />
+
+        <TextView
+            android:id="@+id/tgk"
+            style="@style/Widget.Material3.SearchView.Prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/textview_border"
+            android:padding="10dp"
+            android:text="Grados Kelvin"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
