@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EjemploSpinner</string>
+
+    <string-array name="operaciones">
+        <item>byvoeging</item>
+        <item>aftrekking</item>
+        <item>vermenigvuldiging</item>
+        <item>deling</item>
+    </string-array>
+</resources>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:stretchColumns="1,2,3,4">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/relleno1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                >
+            </TextView>
+            <ImageView
+                android:id="@+id/imgCee"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toStartOf="@+id/imgUsa"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cee" />
+
+            <ImageView
+                android:id="@+id/imgUsa"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toStartOf="@+id/imgJapon"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imgCee"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/usa" />
+
+            <ImageView
+                android:id="@+id/imgJapon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toStartOf="@+id/imgIngla"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imgUsa"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/japon" />
+
+            <ImageView
+                android:id="@+id/imgIngla"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imgJapon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ingla" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/relleno2"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tituloh1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Euro" />
+
+            <TextView
+                android:id="@+id/tituloh2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Dolar" />
+
+            <TextView
+                android:id="@+id/tituloh3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Yen" />
+
+            <TextView
+                android:id="@+id/tituloh4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Libra" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titulov1"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:text="Dolar"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/iptDD"
+                android:background="@drawable/inputamarillo"
+                android:textAlignment="center"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/iptDE"
+                android:background="@drawable/inputs"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:inputType="numberDecimal"
+                />
+
+            <EditText
+                android:id="@+id/iptDY"
+                android:background="@drawable/inputs"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:inputType="numberDecimal"
+                />
+
+            <EditText
+                android:id="@+id/iptDL"
+                android:background="@drawable/inputs"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:inputType="numberDecimal"
+                    />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titulov2"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:text="Euro"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/iptED"
+                android:background="@drawable/inputs"
+                android:textAlignment="center"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/iptEE"
+                android:background="@drawable/inputamarillo"
+                android:textAlignment="center"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/iptEY"
+                android:background="@drawable/inputs"
+                android:textAlignment="center"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/iptEL"
+                android:background="@drawable/inputs"
+                android:textAlignment="center"
+                android:textSize="15dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titulov3"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:text="Yen"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/iptYD"
+                android:background="@drawable/inputs"
+                android:textAlignment="center"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/iptYE"
+                android:background="@drawable/inputs"
+                android:textAlignment="center"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/iptYY"
+                android:background="@drawable/inputamarillo"
+                android:textAlignment="center"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/iptYL"
+                android:background="@drawable/inputs"
+                android:textAlignment="center"
+                android:textSize="15dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titulov4"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:text="Yen"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/iptLD"
+                android:background="@drawable/inputs"
+                android:textAlignment="center"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/iptLE"
+                android:background="@drawable/inputs"
+                android:textAlignment="center"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/iptLY"
+                android:background="@drawable/inputs"
+                android:textAlignment="center"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/iptLL"
+                android:background="@drawable/inputamarillo"
+                android:textAlignment="center"
+                android:textSize="15dp"/>
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
