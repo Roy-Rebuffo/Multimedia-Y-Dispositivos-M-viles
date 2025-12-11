@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:text="Turno de Jugador: "
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/turno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="600dp"
+        android:text="1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titulo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:padding="0dp"
+        android:stretchColumns="0,1,2,3"
+        app:layout_constraintBottom_toTopOf="@+id/titulo"
+        tools:layout_editor_absoluteX="24dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/numero_0"
+                android:tag="0"
+                android:onClick="tocarCasilla"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/joker"
+                android:background="#1ABC9C"
+                android:padding="16dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/numero_1"
+                android:tag="1"
+                android:onClick="tocarCasilla"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/joker"
+                android:background="#1ABC9C"
+                android:padding="16dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/numero_2"
+                android:tag="1"
+                android:onClick="tocarCasilla"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/joker"
+                android:background="#1ABC9C"
+                android:padding="16dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/numero_3"
+                android:tag="1"
+                android:onClick="tocarCasilla"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/joker"
+                android:background="#1ABC9C"
+                android:padding="16dp"
+                android:scaleType="fitCenter" />
+        </TableRow>
+
+        <!-- Fila 2 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/numero_4"
+                android:tag="0"
+                android:onClick="tocarCasilla"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/joker"
+                android:background="#1ABC9C"
+                android:padding="16dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/numero_5"
+                android:tag="1"
+                android:onClick="tocarCasilla"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/joker"
+                android:background="#1ABC9C"
+                android:padding="16dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/numero_6"
+                android:tag="1"
+                android:onClick="tocarCasilla"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/joker"
+                android:background="#1ABC9C"
+                android:padding="16dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/numero_7"
+                android:tag="1"
+                android:onClick="tocarCasilla"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/joker"
+                android:background="#1ABC9C"
+                android:padding="16dp"
+                android:scaleType="fitCenter" />
+        </TableRow>
+
+        <!-- Fila 3 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/numero_8"
+                android:tag="0"
+                android:onClick="tocarCasilla"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/joker"
+                android:background="#1ABC9C"
+                android:padding="16dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/numero_9"
+                android:tag="1"
+                android:onClick="tocarCasilla"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/joker"
+                android:background="#1ABC9C"
+                android:padding="16dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/numero_10"
+                android:tag="1"
+                android:onClick="tocarCasilla"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/joker"
+                android:background="#1ABC9C"
+                android:padding="16dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/numero_11"
+                android:tag="1"
+                android:onClick="tocarCasilla"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/joker"
+                android:background="#1ABC9C"
+                android:padding="16dp"
+                android:scaleType="fitCenter" />
+        </TableRow>
+
+        <!-- Fila 4 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/numero_12"
+                android:tag="0"
+                android:onClick="tocarCasilla"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/joker"
+                android:background="#1ABC9C"
+                android:padding="16dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/numero_13"
+                android:tag="1"
+                android:onClick="tocarCasilla"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/joker"
+                android:background="#1ABC9C"
+                android:padding="16dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/numero_14"
+                android:tag="1"
+                android:onClick="tocarCasilla"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/joker"
+                android:background="#1ABC9C"
+                android:padding="16dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/numero_15"
+                android:tag="1"
+                android:onClick="tocarCasilla"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/joker"
+                android:background="#1ABC9C"
+                android:padding="16dp"
+                android:scaleType="fitCenter" />
+        </TableRow>
+        <Button
+            android:id="@+id/boton_iniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Juego"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp" />
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
