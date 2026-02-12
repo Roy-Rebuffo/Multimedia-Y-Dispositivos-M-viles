@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nombres">
+        <item>Real Madrid</item>
+        <item>Atlético Madrid</item>
+        <item>Barcelona</item>
+        <item>Sevilla</item>
+        <item>Villareal</item>
+        <item>Rayo Vallecano</item>
+        <item>Betis</item>
+        <item>Girona</item>
+        <item>Alavés</item>
+        <item>Athletic Club Bilbao</item>
+        <item>Espanyol</item>
+        <item>Osasuna</item>
+        <item>Villareal</item>
+        <item>Levante</item>
+        <item>Mallorca</item>
+    </string-array>
+
+    <array name="fotos">
+        <item>@drawable/realmadrid</item>
+        <item>@drawable/atlmadrid</item>
+        <item>@drawable/barcelona</item>
+        <item>@drawable/sevilla</item>
+        <item>@drawable/villarreal</item>
+        <item>@drawable/rayovallecano</item>
+        <item>@drawable/betis</item>
+        <item>@drawable/girona</item>
+        <item>@drawable/alaves</item>
+        <item>@drawable/athletic</item>
+        <item>@drawable/espanyol</item>
+        <item>@drawable/osasuna</item>
+        <item>@drawable/getafe</item>
+        <item>@drawable/villarreal</item>
+        <item>@drawable/levante</item>
+        <item>@drawable/mallorca</item>
+    </array>
+
+    <string-array name="URLS">
+        <item>https://www.realmadrid.com/</item>
+        <item>https://en.atleticodemadrid.com/</item>
+        <item>https://www.fcbarcelona.es/</item>
+        <item>https://sevillafc.es/</item>
+        <item>https://www.villarrealcf.es/</item>
+        <item>https://www.rayovallecano.es/</item>
+        <item>https://www.realbetisbalompie.es/</item>
+        <item>https://www.gironafc.cat/</item>
+        <item>https://www.deportivoalaves.com/</item>
+        <item>https://www.athletic-club.eus/</item>
+        <item>https://www.rcdespanyol.com/</item>
+        <item>https://www.osasuna.es/es</item>
+        <item>https://www.getafecf.com/</item>
+        <item>https://villarrealcf.es/</item>
+        <item>https://www.levanteud.com/</item>
+        <item>https://www.rcdmallorca.es/</item>
+    </string-array>
+
+    <string name="region">Europa</string>
+
+    <string name="pais">España</string>
+</resources>
